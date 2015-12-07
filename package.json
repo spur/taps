@@ -1,0 +1,29 @@
+{
+  "name": "spur-taps",
+  "version": "0.1.0",
+  "description": "Mouse & touch events unifier.",
+  "main": "lib/taps.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/spur/taps.git"
+  },
+  "scripts": {
+    "prepublish": "./node_modules/.bin/babel -d lib src/  --presets es2015"
+  },
+  "keywords": [
+    "taps",
+    "touch",
+    "mouse",
+    "events"
+  ],
+  "author": "Paul Colleoni",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/spur/taps/issues"
+  },
+  "homepage": "https://github.com/spur/taps#readme",
+  "devDependencies": {
+    "babel-cli": "^6.3.15",
+    "babel-preset-es2015": "^6.3.13"
+  }
+}
