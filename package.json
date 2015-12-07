@@ -1,5 +1,5 @@
 {
-  "name": "taps",
+  "name": "spur-taps",
   "version": "0.1.0",
   "description": "Mouse & touch events unifier.",
   "main": "lib/taps.js",
