@@ -16,7 +16,7 @@ function getTapWithTouch(e) {
   let taps = [];
 
   currentTap.count = tapCount;
-  currentTap.tapList = taps;
+  currentTap.taps = taps;
 
   if (tapCount > 0) {
     for (let i = 0; i < tapCount; i += 1) {

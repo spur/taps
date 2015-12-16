@@ -2,7 +2,7 @@
   "name": "spur-taps",
   "version": "0.1.0",
   "description": "Mouse & touch events unifier.",
-  "main": "lib/taps.js",
+  "main": "src/taps.js",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/spur/taps.git"
