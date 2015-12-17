@@ -10,7 +10,7 @@ let currentTap = {
   count: 0
 };
 
-function getTapWithTouch(e) {
+function getTouchTap(e) {
   let tapList = e.touches || [];
   let tapCount = tapList.length;
   let taps = [];
@@ -30,7 +30,7 @@ function getTapWithTouch(e) {
   return currentTap;
 }
 
-function getTapWithMouse(e) {
+function getMouseTap(e) {
   currentTap.x = e.clientX;
   currentTap.y = e.clientY;
   currentTap.count = e.type === 'mouseup' ? 0 : 1;
@@ -38,7 +38,7 @@ function getTapWithMouse(e) {
   return currentTap;
 }
 
-let getTap = canTouch ? getTapWithTouch : getTapWithMouse;
+let getTap = canTouch ? getTouchTap : getMouseTap;
 
 let tapEvents = {
   start: canTouch ? 'touchstart' : 'mousedown',
@@ -49,6 +49,8 @@ let tapEvents = {
 export {
   canTouch,
   getTap,
+  getTouchTap,
+  getMouseTap,
   currentTap,
   tapEvents
 };
